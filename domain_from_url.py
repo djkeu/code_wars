@@ -17,7 +17,9 @@ def test_domain_name():
     assert domain_name("http://www.youtube.com/watch?dsfdrjkdf") == "youtube"
 
 
+"""
     #url = re.sub("[A-Za-z]*://", "", url)
     #url = re.sub("www*.", "", url)
     #url = re.sub("\.[A-Za-z]*", "", url)
     #url = re.sub("/[A-Za-z]*", "", url)
+"""
