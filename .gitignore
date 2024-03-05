@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+bin/
+
+# Settings
+.vscode/settings.json
+
+# Virtual_environments
+cw_env/
+
+# Text and json files
+*.txt
+*.json
