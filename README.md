@@ -1,4 +1,5 @@
-# code_wars
+# Code Wars
+www.codewars.com
 
 ### exercises
 - Extract the domain name from a URL\
