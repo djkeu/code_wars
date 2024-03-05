@@ -20,6 +20,6 @@ def test_domain_name():
 """
     #url = re.sub("[A-Za-z]*://", "", url)
     #url = re.sub("www*.", "", url)
-    #url = re.sub("\.[A-Za-z]*", "", url)
-    #url = re.sub("/[A-Za-z]*", "", url)
+    #url = re.sub("\\.[A-Za-z]*", "", url)
+    #url = re.sub("/[A-Za-z\\?]*", "", url)
 """
