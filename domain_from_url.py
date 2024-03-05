@@ -1,5 +1,6 @@
 import re
 
+
 def domain_name(url):
     url = re.sub("([A-Za-z]*://)?(www*.)?(\\.[A-Za-z]*)?(/[A-Za-z\\?]*)?", "", url)
     #url = re.sub("[A-Za-z]*://", "", url)
