@@ -1,6 +1,7 @@
 # Python
 __pycache__/
 bin/
+./pytest_cache
 
 # Settings
 .vscode/settings.json
