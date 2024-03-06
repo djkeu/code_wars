@@ -2,7 +2,11 @@ def pig_it(text):
     """
     Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
     """
-    # code
+    words = text.split()
+    print(words)
+
+
+pig_it("This is my string")
 
 
 def test_pig_it():
