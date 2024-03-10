@@ -6,3 +6,5 @@ http://www.codewars.com
 domain_from_url.py
 - Simple Pig Latin\
 pig_latin.py
+- Is it a letter?\
+is_it_letter.py
