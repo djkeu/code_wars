@@ -8,3 +8,5 @@ domain_from_url.py
 pig_latin.py
 - Is it a letter?\
 is_it_letter.py
+- Moving zeros to the end\
+move_zeros_to_end.py
