@@ -10,3 +10,5 @@ pig_latin.py
 is_it_letter.py
 - Moving zeros to the end\
 move_zeros_to_end.py
+- Sum of numbers\
+sum_of_numbers.py
