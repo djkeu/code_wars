@@ -1,18 +1,25 @@
+import re
+
+
 def validate_pin(pin):
-    #return true or false
-    pass
+    pass   
 
 
-def test_validate_pin():    
-    test.assert_equals(validate_pin("1"),False, "Wrong output for '1'")
-    test.assert_equals(validate_pin("12"),False, "Wrong output for '12'")
-    test.assert_equals(validate_pin("123"),False, "Wrong output for '123'")
-    test.assert_equals(validate_pin("12345"),False, "Wrong output for '12345'")
-    test.assert_equals(validate_pin("1234567"),False, "Wrong output for '1234567'")
-    test.assert_equals(validate_pin("-1234"),False, "Wrong output for '-1234'")
-    test.assert_equals(validate_pin("-12345"),False, "Wrong output for '-12345'")
-    test.assert_equals(validate_pin("1.234"),False, "Wrong output for '1.234'")
-    test.assert_equals(validate_pin("00000000"),False, "Wrong output for '00000000'")
+def test_validate_corect_pin():    
+    assert validate_pin("1234") == True
+    assert validate_pin("123456") == True
+
+
+def test_validate_incorect_pin():    
+    assert validate_pin("1") == False
+    assert validate_pin("12") == False
+    assert validate_pin("123") == False
+    assert validate_pin("12345") == False
+    assert validate_pin("1234567") == False
+    assert validate_pin("-1234") == False
+    assert validate_pin("-12345") == False
+    assert validate_pin("1.234") == False
+    assert validate_pin("00000000") == False
 
 
 
