@@ -2,8 +2,7 @@ import re
 
 
 def validate_pin(pin):
-    # FixMe: search should be able to handel newline
-    if re.search("^\\d{4}$", pin) or re.search("^\\d{6}$", pin):
+    if re.fullmatch("^\\d{4}$", pin) or re.fullmatch("^\\d{6}$", pin):
         return True
     else:
         return False
