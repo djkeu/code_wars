@@ -6,7 +6,6 @@ def validate_pin(pin):
         return True
     else:
         return False
-   
 
 
 def test_validate_corect_pin():    
