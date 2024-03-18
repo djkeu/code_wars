@@ -2,7 +2,11 @@ import re
 
 
 def validate_pin(pin):
-    pass   
+    if re.search("^\\d{4}$", pin) or re.search("^\\d{6}$", pin):
+        return True
+    else:
+        return False
+   
 
 
 def test_validate_corect_pin():    
