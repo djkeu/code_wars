@@ -8,9 +8,15 @@ def validate_pin(pin):
         return False
 
 
-def test_validate_corect_pin():    
+def test_validate_corect_pin():
     assert validate_pin("1234") == True
+    assert validate_pin("0000") == True
+    assert validate_pin("1111") == True
     assert validate_pin("123456") == True
+    assert validate_pin("098765") == True
+    assert validate_pin("000000") == True
+    assert validate_pin("123456") == True
+    assert validate_pin("090909") == True
 
 
 def test_validate_incorect_pin():    
