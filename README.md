@@ -7,3 +7,4 @@ http://www.codewars.com
 - is_it_letter.py
 - move_zeros_to_end.py
 - sum_of_numbers.py
+- validate_pin.py
