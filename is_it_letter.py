@@ -1,6 +1,3 @@
-# https://www.codewars.com/kata/57a06b07cf1fa58b2b000252/train/python
-
-
 def is_it_letter(s):
     if s.isalpha():
         return True
@@ -15,3 +12,6 @@ def test_is_it_letter():
 
 
 is_it_letter("a")
+
+
+# https://www.codewars.com/kata/57a06b07cf1fa58b2b000252/train/python

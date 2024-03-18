@@ -1,6 +1,3 @@
-# https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/python
-
-
 def move_zeros(lst):
     for n in lst:
         if n == 0:
@@ -14,3 +11,6 @@ def test_move_zeros():
     assert move_zeros([0, 0]) == [0, 0]
     assert move_zeros([0]) == [0]
     assert move_zeros([]) == []
+
+
+# https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/python
