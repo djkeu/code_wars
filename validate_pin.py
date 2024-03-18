@@ -8,7 +8,7 @@ def validate_pin(pin):
         return False
 
 
-def test_validate_valid_pin():
+def test_valid_pin():
     assert validate_pin("1234") == True
     assert validate_pin("0000") == True
     assert validate_pin("1111") == True
@@ -19,7 +19,7 @@ def test_validate_valid_pin():
     assert validate_pin("090909") == True
 
 
-def test_validate_invalid_pin():    
+def test_invalid_pin():    
     assert validate_pin("1") == False
     assert validate_pin("12") == False
     assert validate_pin("123") == False
