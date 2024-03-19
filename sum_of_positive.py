@@ -32,3 +32,6 @@ def test_empty_case():
 # FixMe:  assert -6 == 0
 def test_negative_case():
     assert positive_sum([-1,-2,-3,-4,-5]) == 0
+
+
+# https://www.codewars.com/kata/5715eaedb436cf5606000381/train/python
