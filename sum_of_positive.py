@@ -2,16 +2,21 @@ def positive_sum(arr):
     for n in arr:
         if n <= 0:
             arr.remove(n)
-        print(arr)
+    print(arr)
 
     numSum = 0
     for n in arr:
-        numSum += n
-
+        if n:
+            numSum += n
+        else:
+            return 0
+        
     print(numSum)
     return numSum        
 
-positive_sum([ 1, -2 , 3])
+# positive_sum([ 1, -2 , 3])
+positive_sum([ -1, -2 , -3])
+
 
 
 def test_positive_sum():
