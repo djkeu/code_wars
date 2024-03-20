@@ -1,22 +1,10 @@
 def positive_sum(arr):
+    positive_arr = []
     for n in arr:
-        if n <= 0:
-            arr.remove(n)
-    print(arr)
+        if n > 0:
+            positive_arr.append(n)
 
-    numSum = 0
-    for n in arr:
-        if n:
-            numSum += n
-        else:
-            return 0
-        
-    print(numSum)
-    return numSum        
-
-# positive_sum([ 1, -2 , 3])
-positive_sum([ -1, -2 , -3])
-
+    return sum(positive_arr)
 
 
 def test_positive_sum():
