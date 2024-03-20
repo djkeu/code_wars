@@ -9,3 +9,4 @@ http://www.codewars.com
 - sum_of_numbers.py
 - validate_pin.py
 - sum_of_positive.py
+- square_sum.py
