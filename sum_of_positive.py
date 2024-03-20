@@ -17,7 +17,6 @@ def test_empty_case():
     assert positive_sum([]) == 0     
     
 
-# FixMe:  assert -6 == 0
 def test_negative_case():
     assert positive_sum([-1,-2,-3,-4,-5]) == 0
 
