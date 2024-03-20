@@ -8,3 +8,4 @@ http://www.codewars.com
 - move_zeros_to_end.py
 - sum_of_numbers.py
 - validate_pin.py
+- sum_of_positive.py
