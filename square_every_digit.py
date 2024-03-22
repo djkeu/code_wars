@@ -13,6 +13,9 @@ def square_digits(num):
 square_digits(9119)
 
 
+def test_square_digits():
+    assert square_digits(9119) == 811181
+    assert square_digits(0) == 0
 
 
 # https://www.codewars.com/kata/546e2562b03326a88e000020/train/python
