@@ -2,7 +2,7 @@ def duplicate_encode(word):
     encoded_word = ""
 
     for c in word.lower():
-        if word.count(c) == 1:
+        if word.lower().count(c) == 1:
             encoded_word += "("
         else:
             encoded_word += ")"
