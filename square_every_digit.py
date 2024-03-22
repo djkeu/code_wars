@@ -1,16 +1,13 @@
 def square_digits(num):
     squared_numbers = []
-
     for digit in map(int, str(num)):
         squared_numbers.append(digit**2)
-    print(squared_numbers)
 
     concatenated_number = ""
     for number in squared_numbers:
         concatenated_number += str(number)
-    print(concatenated_number)
-
-square_digits(9119)
+    
+    return int(concatenated_number)
 
 
 def test_square_digits():
