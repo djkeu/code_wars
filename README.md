@@ -10,3 +10,5 @@ http://www.codewars.com
 - validate_pin.py
 - sum_of_positive.py
 - square_sum.py
+- square_every_digit.py
+- duplicate_encoder.py
