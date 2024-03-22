@@ -10,6 +10,8 @@ def duplicate_encode(word):
     
     return encoded_word
 
+    # ToDo: list comprehension
+
 
 def test_duplicate_encode():
     assert duplicate_encode("din") == "((("
