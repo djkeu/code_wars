@@ -1,5 +1,14 @@
+import string
+
+
 def is_pangram(s):
-    return False
+    list_alphabet = list(string.ascii_lowercase)
+
+    for ch in list_alphabet:
+        if ch not in list(s):
+            return False
+        else:
+            return True
 
 
 def test_pangram():        
