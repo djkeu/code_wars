@@ -2,19 +2,11 @@ import string
 
 
 def is_pangram(s):
-    list_alphabet = list(string.ascii_lowercase)
-    list_string = list(s.lower())
-    #print(list_alphabet)
-    #print(list_string)
-
-    for ch in list_alphabet:
-        if ch not in list_string:
+    for ch in list(string.ascii_lowercase):
+        if ch not in list(s.lower()):
             return False
-        else:
-            return True
 
-is_pangram("Hallo")
-is_pangram("bcdefghijklmnopqrstuvwxyz")
+    return True
 
 
 def test_pangram():        
