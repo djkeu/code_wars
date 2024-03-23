@@ -12,3 +12,4 @@ http://www.codewars.com
 - square_sum.py
 - square_every_digit.py
 - duplicate_encoder.py
+- detect_pangram.py
