@@ -2,6 +2,24 @@ def get_count(sentence):
     pass
 
 `
+def all_vowels():
+    assert get_count("aeiou") == 5, f"Incorrect answer for \"aeiou\""
+    
+
+def only_y():
+    assert get_count("y") == 0, f"Incorrect answer for \"y\""
+    
+
+def no_vowels():
+    assert get_count("bcdfghjklmnpqrstvwxz y") == 0, f"Incorrect answer for \"bcdfghjklmnpqrstvwxz y\""
+    
+
+def no_vowels():
+    assert get_count("") == 0, f"Incorrect answer for empty string"
+    
+
+def test_abracadabra():    
+    assert get_count("abracadabra") == 5, f"Incorrect answer for \"abracadabra\""
 
 
 """
