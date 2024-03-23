@@ -21,7 +21,7 @@ def test_no_vowels():
     assert get_count("bcdfghjklmnpqrstvwxz y") == 0
     
 
-def test_no_vowels():
+def test_empty_string():
     assert get_count("") == 0
     
 
