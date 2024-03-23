@@ -9,19 +9,19 @@ def get_count(sentence):
     return vowel_count
 
 
-def all_vowels():
+def test_all_vowels():
     assert get_count("aeiou") == 5
     
 
-def only_y():
+def test_only_y():
     assert get_count("y") == 0
     
 
-def no_vowels():
+def test_no_vowels():
     assert get_count("bcdfghjklmnpqrstvwxz y") == 0
     
 
-def no_vowels():
+def test_no_vowels():
     assert get_count("") == 0
     
 
