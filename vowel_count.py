@@ -3,23 +3,23 @@ def get_count(sentence):
 
 `
 def all_vowels():
-    assert get_count("aeiou") == 5, f"Incorrect answer for \"aeiou\""
+    assert get_count("aeiou") == 5
     
 
 def only_y():
-    assert get_count("y") == 0, f"Incorrect answer for \"y\""
+    assert get_count("y") == 0
     
 
 def no_vowels():
-    assert get_count("bcdfghjklmnpqrstvwxz y") == 0, f"Incorrect answer for \"bcdfghjklmnpqrstvwxz y\""
+    assert get_count("bcdfghjklmnpqrstvwxz y") == 0
     
 
 def no_vowels():
-    assert get_count("") == 0, f"Incorrect answer for empty string"
+    assert get_count("") == 0
     
 
 def test_abracadabra():    
-    assert get_count("abracadabra") == 5, f"Incorrect answer for \"abracadabra\""
+    assert get_count("abracadabra") == 5
 
 
 """
