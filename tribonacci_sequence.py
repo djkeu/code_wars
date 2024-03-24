@@ -1,16 +1,35 @@
 def tribonacci(signature, n):
-    if signature == [0, 0, 0]:
-        return []
-    
     tribo_list = []
 
+    if n == 0:
+        return tribo_list
+    elif n == 1:
+        tribo_list.append(signature[0])
+        return tribo_list
+    elif n == 2:
+        tribo_list.append(signature[0])
+        tribo_list.append(signature[1])
+        return tribo_list
+    
+    for number in signature:
+        tribo_list.append(number)
 
+    i = 0
+    while i < n-3:
+        tribo_list.append(tribo_list[i] + tribo_list[i+1] + tribo_list[i+2])    
+        i += 1
+
+    return tribo_list
+
+
+"""
 print(tribonacci([0, 0, 0], 3))
-print(tribonacci([1,1,1], 3))
+print(tribonacci([1,1,1], 10))
+print(tribonacci(1, 1, 1), 1)  # FixMe: should return [1], not [1, 1, 1]
+"""
 
 
-
-def basic_tests():
+def test_tribonacci():
     assert tribonacci([1, 1, 1], 10) == [1, 1, 1, 3, 5, 9, 17, 31, 57, 105]
     assert tribonacci([0, 0, 1], 10) == [0, 0, 1, 1, 2, 4, 7, 13, 24, 44]
     assert tribonacci([0, 1, 1], 10) == [0, 1, 1, 2, 4, 7, 13, 24, 44, 81]
