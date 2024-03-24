@@ -1,5 +1,12 @@
 def tribonacci(signature, n):
-    pass
+    if signature == [0, 0, 0]:
+        return []
+    
+    tribo_list = []
+
+
+print(tribonacci([0, 0, 0], 3))
+print(tribonacci([1,1,1], 3))
 
 
 
