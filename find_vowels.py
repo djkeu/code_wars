@@ -6,7 +6,6 @@ def vowel_indices(word):
         if ch in list("aeiouy"):
             found_vowels.append(word.index(ch) + 1)
 
-    found_vowels = set(found_vowels)
     return found_vowels
     
 
