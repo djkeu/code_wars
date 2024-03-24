@@ -1,5 +1,12 @@
+from string import ascii_letters
+
 def alphabet_position(text):
-    pass
+    alphabet_list = list(ascii_letters)
+    numbers = list(range(1,27))
+    print(alphabet_list)
+    print(numbers)
+
+alphabet_position("test")
 
 
 def test_alphabet_position():
