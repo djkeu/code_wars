@@ -9,3 +9,4 @@ http://www.codewars.com
 - vowel_count.py
 - tribonacci_sequence.py
 - jaden_casing_strings.py
+- alphabet_position.py
