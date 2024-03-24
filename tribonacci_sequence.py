@@ -4,8 +4,6 @@ def tribonacci(signature, n):
     
     if n == 0:
         return tribo_list
-    
-    # ToDo: put in while loop below
     elif n == 1:
         tribo_list.append(signature[0])
         return tribo_list
