@@ -1,6 +1,5 @@
 def tribonacci(signature, n):
     tribo_list = []
-
     
     if n == 0:
         return tribo_list
@@ -19,15 +18,8 @@ def tribonacci(signature, n):
     while i < n-3:
         tribo_list.append(tribo_list[i] + tribo_list[i+1] + tribo_list[i+2])    
         i += 1
-
+    
     return tribo_list
-
-
-"""
-print(tribonacci([0, 0, 0], 3))
-print(tribonacci([1,1,1], 10))
-print(tribonacci(1, 1, 1), 1)
-"""
 
 
 def test_tribonacci():
