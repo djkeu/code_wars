@@ -6,3 +6,4 @@ http://www.codewars.com
 
 ### exercises
 - detect_pangram.py
+- vowel_count.py
