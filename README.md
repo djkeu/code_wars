@@ -7,3 +7,4 @@ http://www.codewars.com
 ### exercises
 - detect_pangram.py
 - vowel_count.py
+- tribonacci_sequence.py
