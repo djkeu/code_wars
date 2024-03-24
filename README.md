@@ -8,3 +8,4 @@ http://www.codewars.com
 - detect_pangram.py
 - vowel_count.py
 - tribonacci_sequence.py
+- jaden_casing_strings.py
