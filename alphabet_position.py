@@ -1,12 +1,22 @@
-from string import ascii_letters
+from string import ascii_lowercase
 
 def alphabet_position(text):
-    alphabet_list = list(ascii_letters)
-    numbers = list(range(1,27))
-    print(alphabet_list)
-    print(numbers)
+    alphabet_list = list(ascii_lowercase)
 
-alphabet_position("test")
+    numbered_list = []
+    numbered_text = ""
+
+    for letter in text:
+        if letter.isalpha():
+            number = alphabet_list.index(letter.lower())
+            numbered_list.append(number + 1)
+    
+    for number in numbered_list:
+        numbered_text += f"{number} "
+
+    return numbered_text.strip()
+
+print(alphabet_position("test"))
 
 
 def test_alphabet_position():
