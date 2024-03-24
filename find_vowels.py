@@ -2,6 +2,13 @@ def vowel_indices(word):
 	...
 
 
+def test_vowel_indices():
+    assert vowel_indices("mmm") == []
+    assert vowel_indices("apple") == [1,5]
+    assert vowel_indices("123456") == []
+    assert vowel_indices("UNDISARMED") == [1,4,6,9]
+
+
 """
 We want to know the index of the vowels in a given word, for example, there are two vowels in the word super (the second and fourth letters).
 
