@@ -1,6 +1,13 @@
 def vowel_indices(word):
-	...
+    word = word.lower()
+    found_vowels = []
 
+    for ch in word:
+        if ch in list("aeiouy"):
+            found_vowels.append(word.index(ch) + 1)
+
+    return found_vowels
+    
 
 def test_vowel_indices():
     assert vowel_indices("mmm") == []
