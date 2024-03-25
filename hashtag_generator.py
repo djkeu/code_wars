@@ -13,10 +13,6 @@ def generate_hashtag(s):
         return False
 
 
-print(generate_hashtag("CoDeWaRs is niCe"))
-print(generate_hashtag("Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat"))
-
-
 def test_correct_hashtag_fixed():
     assert generate_hashtag('Codewars') == '#Codewars'
     assert generate_hashtag('Codewars      ') == '#Codewars'
