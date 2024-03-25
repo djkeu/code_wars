@@ -1,5 +1,4 @@
 import re
-# ToDo: avoid repetition
     
 
 def plane_seat(a):
