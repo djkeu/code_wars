@@ -2,6 +2,9 @@ def generate_hashtag(s):
     pass
 
 
+generate_hashtag("Codewars")
+
+
 def test_correct_hashtag_fixed():
     assert generate_hashtag('Codewars') == '#Codewars'
     assert generate_hashtag('Codewars      ') == '#Codewars'
