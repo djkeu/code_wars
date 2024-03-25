@@ -12,3 +12,4 @@ http://www.codewars.com
 - alphabet_position.py
 - find_vowels.py
 - hashtag_generator.py
+- plane_seating.py
