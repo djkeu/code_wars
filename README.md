@@ -11,3 +11,4 @@ http://www.codewars.com
 - jaden_casing_strings.py
 - alphabet_position.py
 - find_vowels.py
+- hashtag_generator.py
