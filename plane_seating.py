@@ -2,6 +2,12 @@ def plane_seat(a):
     ...
 
 
+def test_plane_seat():
+    assert plane_seat('2B') == 'Front-Left'
+    assert plane_seat('20B') == 'Front-Left'
+    assert plane_seat('58I') == 'No Seat!!'
+    assert plane_seat('60D') == 'Back-Middle'
+    assert plane_seat('17K') == 'Front-Right'
 
 
 """
