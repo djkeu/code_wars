@@ -1,8 +1,8 @@
 def generate_hashtag(s):
-    pass
+    return "#" + s.title()
 
 
-generate_hashtag("Codewars")
+print(generate_hashtag("Codewars is niCe"))
 
 
 def test_correct_hashtag_fixed():
