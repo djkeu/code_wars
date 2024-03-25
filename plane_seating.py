@@ -2,8 +2,79 @@ import re
 
 
 def plane_seat(a):
-    ...
+    if re.search("[6-9][1-9].", a):
+        return "No Seat!!"
+    
 
+    if re.search("[4-5][1-9][A-C]", a):
+        return "Back-Left"
+    elif re.search("[4-5][1-9][D-F]", a):
+        return "Back-Middle"
+    elif re.search("[4-5][1-9][GHK]", a):
+        return "Back-Right"
+    
+    elif re.search("50[A-C]", a):
+        return "Back-Left"
+    elif re.search("50[D-F]", a):
+        return "Back-Middle"
+    elif re.search("50[GHK]", a):
+        return "Back-Right"
+
+    elif re.search("60[A-C]", a):
+        return "Back-Left"
+    elif re.search("60[D-F]", a):
+        return "Back-Middle"
+    elif re.search("60[GHK]", a):
+        return "Back-Right"
+
+
+    if re.search("[2-3][1-9][A-C]", a):
+        return "Middle-Left"
+    elif re.search("[2-3][1-9][D-F]", a):
+        return "Middle-Middle"
+    elif re.search("[2-3][1-9][GHK]", a):
+        return "Middle-Right"
+
+    elif re.search("40[A-C]", a):
+        return "Middle-Left"
+    elif re.search("40[D-F]", a):
+        return "Middle-Middle"
+    elif re.search("40[GHK]", a):
+        return "Middle-Right"
+
+    elif re.search("30[A-C]", a):
+        return "Middle-Left"
+    elif re.search("30[D-F]", a):
+        return "Middle-Middle"
+    elif re.search("30[GHK]", a):
+        return "Middle-Right"
+
+
+    elif re.search("[1-9][A-C]", a):
+        return "Front-Left"
+    elif re.search("[1-9][D-F]", a):
+        return "Front-Middle"
+    elif re.search("[1-9][GHK]", a):
+        return "Front-Right"
+
+    elif re.search("20[A-C]", a):
+        return "Front-Left"
+    elif re.search("20[D-F]", a):
+        return "Front-Middle"
+    elif re.search("20[GHK]", a):
+        return "Front-Right"
+
+    elif re.search("10[A-C]", a):
+        return "Front-Left"
+    elif re.search("10[D-F]", a):
+        return "Front-Middle"
+    elif re.search("10[GHK]", a):
+        return "Front-Right"
+
+
+    return "No Seat!!"
+
+    
 
 def test_plane_seat():
     assert plane_seat('2B') == 'Front-Left'
