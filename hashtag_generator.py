@@ -2,18 +2,23 @@ def generate_hashtag(s):
     """
     # Done: It must start with a hashtag (#).
     # Done: All words must have their first letter capitalized.
-    # ToDo: Capitalize result of the words have a lenght of 1
+    # Done: Capitalize result of the words have a length of 1
     # ToDo: If the final result is longer than 140 chars it must return false.
     # ToDo: If the input or the result is an empty string it must return false.
     """
 
     s_list = s.split()
     result = ""
-    for item in s_list:
-        item = item.strip().title()
-        result += item
 
-    return "#" + result
+    for item in s_list:
+        item = item.strip()
+        if len(s_list[0]) == 1:
+            result += item
+            return "#" + result.capitalize()
+        else:
+            item = item.strip().title()
+            result += item
+            return "#" + result
 
 
 print(generate_hashtag("Codewars is niCe"))
