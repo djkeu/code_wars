@@ -1,10 +1,12 @@
 def generate_hashtag(s):
     """
-    # Done: It must start with a hashtag (#).
+    # Done: Result must start with a hashtag (#).
     # Done: All words must have their first letter capitalized.
     # ToDo: If the final result is longer than 140 chars it must return false.
-    # ToDo: If the input or the result is an empty string it must return false.
+    # Done: If the input or the result is an empty string it must return false.
     """
+    if s == "":
+        return False
 
     s_list = s.split()
     result = ""
@@ -13,10 +15,15 @@ def generate_hashtag(s):
         item = item.strip().title()
         result += item
 
-    return "#" + result
+    print(len(result))
+    if len(result) > 140:
+        return False
+    else:
+        return "#" + result
 
 
 print(generate_hashtag("CoDeWaRs is niCe"))
+print(generate_hashtag("Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat"))
 
 
 def test_correct_hashtag_fixed():
