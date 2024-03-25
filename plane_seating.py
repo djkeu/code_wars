@@ -1,11 +1,13 @@
 import re
-
-
-def plane_seat(a):
-    if re.search("[6-9][1-9].", a):
-        return "No Seat!!"
+# ToDo: avoid repetition
     
 
+def plane_seat(a):
+    # No seat
+    if re.search("[6][1-9].|[7-9][0-9].|.[IJ]", a):
+        return "No Seat!!"
+
+    # Back seats
     if re.search("[4-5][1-9][A-C]", a):
         return "Back-Left"
     elif re.search("[4-5][1-9][D-F]", a):
@@ -27,7 +29,8 @@ def plane_seat(a):
     elif re.search("60[GHK]", a):
         return "Back-Right"
 
-
+    
+    # Middle seats
     if re.search("[2-3][1-9][A-C]", a):
         return "Middle-Left"
     elif re.search("[2-3][1-9][D-F]", a):
@@ -50,6 +53,7 @@ def plane_seat(a):
         return "Middle-Right"
 
 
+    # Front seats
     elif re.search("[1-9][A-C]", a):
         return "Front-Left"
     elif re.search("[1-9][D-F]", a):
@@ -70,10 +74,6 @@ def plane_seat(a):
         return "Front-Middle"
     elif re.search("10[GHK]", a):
         return "Front-Right"
-
-
-    return "No Seat!!"
-
     
 
 def test_plane_seat():
