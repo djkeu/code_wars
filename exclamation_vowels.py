@@ -1,5 +1,11 @@
 def replace_exclamation(st):
-    return st
+    result = st
+
+    for vowel in "aeiouAEIOU":
+        if vowel in st:
+            result = result.replace(vowel, "!")
+    
+    return result
 
 
 def test_replace_exclamation():
