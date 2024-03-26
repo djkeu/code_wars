@@ -7,3 +7,4 @@ http://www.codewars.com
 ### exercises
 - plane_seating.py
 - exclamation_vowels.py
+- umbrellas.py
