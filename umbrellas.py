@@ -1,13 +1,30 @@
-
 def min_umbrellas(weather):
-    pass
+    without_umbrella = ["clear", "sunny", "cloudy", "overcast", "windy"]
+    with_umbrella = ["rainy", "thunderstorms"]
+
+    umbrella_count = 0
+    j = len(weather)
+
+    i = 0
+    if weather[0] in with_umbrella:
+        umbrella_count += 1
+        i += 1
+
+    while i < j-1:
+        # FixMe: fails random tests on Codewars
+        if (weather[i] in without_umbrella and weather[i+1] in with_umbrella):
+            umbrella_count += 1
+        # elif (weather[i] in with_umbrella and weather[i+1] not in with_umbrella):
+            # umbrella_count += 1
+        i += 1
+
+    return umbrella_count
 
 
 def test_min_umbrellas():
     assert min_umbrellas(["cloudy"]) == 0
     assert min_umbrellas(["rainy", "rainy", "rainy", "rainy"]) == 1
     assert min_umbrellas(["overcast", "rainy", "clear", "thunderstorms"]) == 2
-
 
 
 """
