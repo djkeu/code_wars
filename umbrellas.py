@@ -3,7 +3,10 @@ def min_umbrellas(weather):
     pass
 
 
-
+def test_min_umbrellas():
+    assert min_umbrellas(["cloudy"]) == 0
+    assert min_umbrellas(["rainy", "rainy", "rainy", "rainy"]) == 1
+    assert min_umbrellas(["overcast", "rainy", "clear", "thunderstorms"]) == 2
 
 
 
